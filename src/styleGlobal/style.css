@@ -1,0 +1,21 @@
+@import '../style/result.css';
+@import '../style/orderType.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Card {
+    display: grid;
+    width: 300px;
+    height: 366px;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.234));
+    margin: 20px auto;
+    border-radius: 16px;
+}
+
+
+
