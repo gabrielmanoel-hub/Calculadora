@@ -2,29 +2,24 @@
 
 
 
-export function calculation(result, operador) {
-    let digit = result.innerHTML.split('')
-    let number = result.innerHTML.match(/[.\d]/g)
-    let number1 = null
-
-    digit.forEach(element => {
-        if(element === '*') {
-            return            
-        }
-        console.log(element)
-        
-    });
-
+export function calculation(result) {
+   const num = result.innerHTML.split(/[^.\d]/g)
+   const digit = result.innerHTML.split(/[.\d]/g).filter(e => e)
     
-    // const digits = {
-    //     '*': Number(number[0]) * Number(number[1]),
-    //     '-': Number(number[0]) - Number(number[1]),
-    //     '+': Number(number[0]) + Number(number[1]),
-    //     '/': Number(number[0]) / Number(number[1])
-    // }
-
-    // if(digits[digit[0]]) {
-    //     return digits[digit[0]]
-    // }
-    
+    const digits = {
+        '*': Number(num[0]) * Number(num[1]),
+        '-': Number(num[0]) - Number(num[1]),
+        '+': Number(num[0]) + Number(num[1]),
+        '/': Number(num[0]) / Number(num[1])
+    }
+    return calculations(digit.join(), digits)
  }
+
+ function calculations(digit, digits) {
+    if(digits[digit]) {
+        return   Number.isInteger(digits[digit]) 
+            ? digits[digit] 
+            : digits[digit].toFixed(2)
+    }
+ }
+ 

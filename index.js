@@ -11,26 +11,16 @@ digits.forEach((digit) => {
       ${resetDivisor(digit)}</button>`
 })
 
-const operator = {
-   '.': '.',
-   '/': '/',
-   '*': '*',
-   '+': '+',
-   '-': '-',
-   '=': '='
-}
-
-
 const getElement = document.querySelectorAll('button')
 getElement.forEach((element) => {
    element.addEventListener('click',(element) => {
-      
       sendElementToScreen(element)
       clear(element)
       cleanAll(element)
       limitRepeats(element)
       calculus(element)
       newCalculation(element)
+      recalculate()
    })
 })
 
@@ -59,15 +49,26 @@ const cleanAll = (element) => {
    }
 }
 
+let boolean = false;
 const calculus = (element) => {
    if(element.target.id === '=') {
-      result.innerHTML = eval(result.innerHTML.toString())
-      console.log(result.innerHTML.split(/[.\d]/g).join())
+      console.log(calculation(result))
+      boolean = true
+      result.innerHTML = calculation(result)
    }
 }
 
+
 const newCalculation = (element) => {
-   if(element.target.id === '=' && result.innerHTML.match(/\d/g)) {
+   if(boolean && element.target.id.match(/\d/g)) {
+      boolean = false
       result.innerHTML = ''
+      result.innerHTML = element.target.id
+   }
+}
+
+const recalculate = () => {
+   if(boolean && result.innerHTML.match(/[^.\d]/g)) {
+      boolean = false
    }
 }
