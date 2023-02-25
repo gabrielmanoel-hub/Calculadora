@@ -20,7 +20,7 @@ getElement.forEach((element) => {
       limitRepeats(element)
       calculus(element)
       newCalculation(element)
-      recalculate()
+      // recalculate()
    })
 })
 
@@ -52,7 +52,6 @@ const cleanAll = (element) => {
 let boolean = false;
 const calculus = (element) => {
    if(element.target.id === '=') {
-      console.log(calculation(result))
       boolean = true
       result.innerHTML = calculation(result)
    }
@@ -67,8 +66,8 @@ const newCalculation = (element) => {
    }
 }
 
-const recalculate = () => {
-   if(boolean && result.innerHTML.match(/[^.\d]/g)) {
-      boolean = false
-   }
-}
+// const recalculate = () => {
+//    if(boolean && result.innerHTML.match(/[^.\d]/g)) {
+//       boolean = false
+//    }
+// }

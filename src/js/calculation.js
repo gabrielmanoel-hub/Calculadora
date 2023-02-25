@@ -19,7 +19,10 @@ export function calculation(result) {
     if(digits[digit]) {
         return   Number.isInteger(digits[digit]) 
             ? digits[digit] 
-            : digits[digit].toFixed(2)
+            : round(digits[digit])
     }
  }
  
+ function round(n) {
+    return (Math.round(n * 100 - 1) / 100).toFixed(2);
+}
