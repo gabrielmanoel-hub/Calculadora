@@ -66,8 +66,3 @@ const newCalculation = (element) => {
    }
 }
 
-// const recalculate = () => {
-//    if(boolean && result.innerHTML.match(/[^.\d]/g)) {
-//       boolean = false
-//    }
-// }

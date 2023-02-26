@@ -3,26 +3,21 @@
 
 
 export function calculation(result) {
-   const num = result.innerHTML.split(/[^.\d]/g)
-   const digit = result.innerHTML.split(/[.\d]/g).filter(e => e)
-    
+    const numStart = result.innerHTML.match(/^-?[\d]+[.]?[\d]+|^[-]?\d/g)
+    const numEnd = result.innerHTML.match(/\d+[.]?\d+$|\d$/g)
+    const digit = result.innerHTML.split(/[.\d]/g).filter(e => e)
+    const checkOperatorNumbers = digit.length > 1 ? digit[1] : digit[0]
     const digits = {
-        '*': Number(num[0]) * Number(num[1]),
-        '-': Number(num[0]) - Number(num[1]),
-        '+': Number(num[0]) + Number(num[1]),
-        '/': Number(num[0]) / Number(num[1])
+        '*': Number(numStart[0]) * Number(numEnd[0]),
+        '-': Number(numStart[0]) - Number(numEnd[0]),
+        '+': Number(numStart[0]) + Number(numEnd[0]),
+        '/': Number(numStart[0]) / Number(numEnd[0])
     }
-    return calculations(digit.join(), digits)
+    return calculations(checkOperatorNumbers, digits)
  }
 
  function calculations(digit, digits) {
     if(digits[digit]) {
-        return   Number.isInteger(digits[digit]) 
-            ? digits[digit] 
-            : round(digits[digit])
+        return digits[digit]   
     }
  }
- 
- function round(n) {
-    return (Math.round(n * 100 - 1) / 100).toFixed(2);
-}
