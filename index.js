@@ -37,7 +37,6 @@ const operators = (element) => {
          signal = true
          result.innerHTML += element.target.id 
       }
-      console.log(signal)
    }
 }
 
