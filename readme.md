@@ -60,7 +60,7 @@
 # Imagens do projeto
 
 
-<img style= 'height: 500px' src='./img/imagem-do-projeto/download (1).png'></img>
+<img style= 'height: 500px widgth: 500px' src='./img/imagem-do-projeto/download (1).png'></img>
 
-<img style= 'height: 500px' src='./img/imagem-do-projeto/02.png'></img>
+<img style= 'height: 500px widgth: 500px' src='./img/imagem-do-projeto/02.png'></img>
 
