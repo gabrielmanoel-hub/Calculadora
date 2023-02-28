@@ -4,7 +4,7 @@
 
 <!-- ======================== -->
 # Índice
-<ul style='display: grid'>
+<ul style='display: grid; '>
    <li><a href='#Tecnologia-utilizadas-no-projeto'>Tecnologia</a></li>
    <li><a href='#Caracteristicas'>Caracteristicas</a></li>
    <li><a href='#Serviços-usados'>Serviços usados</a></li>
@@ -24,7 +24,7 @@
 <div id='Tecnologia-utilizadas-no-projeto'></div>
 
 # Tecnologia utilizadas no projeto
-<ul style='padding: 0' >
+<ul style='padding: 0; list-style: none;' >
     <li style='display: flex; gap: 4px'>
        <img style='height: 20px; text-align: center; margin-bottom: 4px' src='./img/html.png'></img>
         <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'>HTML</a>
