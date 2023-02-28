@@ -4,12 +4,12 @@
 
 <!-- ======================== -->
 # Índice
-<div style='display: grid'>
-    <a href='#Tecnologia-utilizadas-no-projeto'>Tecnologia</a>
-    <a href='#Caracteristicas'>Caracteristicas</a>
-    <a href='#Serviços-usados'>Serviços usados</a>
-</div>
-<br />
+<ul style='display: grid'>
+   <li><a href='#Tecnologia-utilizadas-no-projeto'>Tecnologia</a></li>
+   <li><a href='#Caracteristicas'>Caracteristicas</a></li>
+   <li><a href='#Serviços-usados'>Serviços usados</a></li>
+</ul>
+
 <!-- ======================== -->
 
 # Descrição do projeto
