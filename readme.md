@@ -4,15 +4,19 @@
 
 <!-- ======================== -->
 # Índice
-<a style='display: block' href='#Tecnologia-utilizadas-no-projeto'>Tecnologia</a>
-<a style='display: block' href='#Caracteristicas'>Caracteristicas</a>
-<a style='display: block' href='#Serviços-usados'>Serviços usados</a>
-
+<div style='display: grid'>
+    <a href='#Tecnologia-utilizadas-no-projeto'>Tecnologia</a>
+    <a href='#Caracteristicas'>Caracteristicas</a>
+    <a href='#Serviços-usados'>Serviços usados</a>
+</div>
+<br />
 <!-- ======================== -->
 
 # Descrição do projeto
 <p>Calculadora para realizar operações matemáticas básicas.</p>
+<br />
 
+<!-- ======================== -->
 # Link Para o Projeto
 <a href='https://earnest-sprinkles-279e4d.netlify.app/'>Projeto</a>
 
@@ -34,7 +38,6 @@
         <a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'>CSS</a>
     </li>
 </ul>
-<br/>
 
 <!-- ======================== -->
 <div id='Serviços-usados'></div>
@@ -45,7 +48,7 @@
     <a href='https://app.netlify.com/'>Netlify</a>
 </div>
 <br/>
-
+<!-- ======================== -->
 <div id='Caracteristicas'></div>
 
 # Caracteristicas 
