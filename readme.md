@@ -59,5 +59,6 @@
 
 # Imagens do projeto
 
-<img src='./img/imagem-do-projeto/01.png'></img>
+<img src='./img/imagem-do-projeto/download (1).png'></img>
+<img src='./img/imagem-do-projeto/02.png'></img>
 
