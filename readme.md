@@ -24,16 +24,16 @@
 <div id='Tecnologia-utilizadas-no-projeto'></div>
 
 # Tecnologia utilizadas no projeto
-<ul style='padding: 0; list-style: none;' >
-    <li style='display: flex; gap: 4px'>
+<ul style='padding: 0; ' >
+    <li style='display: flex; list-style: none; gap: 4px'>
        <img style='height: 20px; text-align: center; margin-bottom: 4px' src='./img/html.png'></img>
         <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'>HTML</a>
     </li>
-    <li style='display: flex; gap: 4px; margin-bottom: 4px'>
+    <li style='display: flex;  list-style: none; gap: 4px; margin-bottom: 4px'>
         <img style='height: 20px;' src='./img/js.png'></img>
         <a href='https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'>JavaScript</a>
     </li>
-    <li style='display: flex; gap: 4px; margin-bottom: 4px'>
+    <li style='display: flex; list-style: none; gap: 4px; margin-bottom: 4px'>
         <img style='height: 20px; text-align: center' src='./img/css-3.png'></img>
         <a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'>CSS</a>
     </li>
