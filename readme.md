@@ -59,9 +59,8 @@
 
 # Imagens do projeto
 
-<<<<<<< HEAD
-<img src='./img/imagem-do-projeto/download (1).png'></img>
-=======
->>>>>>> d470bd9da4c8825066b7e39078318fe281de1e31
-<img src='./img/imagem-do-projeto/02.png'></img>
+
+<img style= 'height: 500px' src='./img/imagem-do-projeto/download (1).png'></img>
+
+<img style= 'height: 500px' src='./img/imagem-do-projeto/02.png'></img>
 
