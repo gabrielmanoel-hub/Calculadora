@@ -1,4 +1,27 @@
 
+
+.result {
+    margin: 0 auto;
+    position: relative;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    width: 86%;
+    height: 54px;
+    padding: 13.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+
 #digit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
