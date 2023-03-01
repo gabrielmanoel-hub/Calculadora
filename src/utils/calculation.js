@@ -1,4 +1,7 @@
 export function calculation(result) {
     let response = eval(result.innerHTML)
-    return response
+    if(response) {
+        return response
+    }
+    return null
  }
