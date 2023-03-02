@@ -24,6 +24,7 @@ getElement.forEach((element) => {
       calculus(elements)
       resetPoint(elements)
       recalculate(elements)
+      replaceOperators(elements)
    })
 })
 
@@ -46,7 +47,7 @@ const operators = (element) => {
 
 const clear = (element) => {
    if (element === 'C') {
-      signal = false
+      signal = true
       resetPoints = true
       result.innerHTML = result.innerHTML.slice(0, -1)
    }
@@ -61,7 +62,10 @@ const cleanAll = (element) => {
 }
 
 const calculus = (element) => {
-   if (element === '=') {
+   const screen = result.innerHTML.slice(-1)
+   if(element == '=' && screen == '.') return
+   if(element == '=' &&  result.innerHTML == '') return
+   if (element == '=') {
       signal = false
       recalculates = true
       result.innerHTML = calculation(result)
@@ -69,16 +73,32 @@ const calculus = (element) => {
 }
 
 const recalculate = (element) => {
-   if (recalculates && !isNaN(element) || element == '.') {
+   if (recalculates && !isNaN(element)) {
+      recalculates = false
+      result.innerHTML = element
+   } else if(recalculates && element == '.') {
       recalculates = false
       result.innerHTML = element
    }
 }
 
 const resetPoint = (element) => {
-   // result.innerHTML += element
    if (resetPoints && element == '.') {
       resetPoints = false
       result.innerHTML += element
+   }
+}
+
+const replaceOperators = (element) => {
+   const operators = {
+      "/":"/",
+      "*":"*", 
+      "-":"-", 
+      "+":"+" 
+   }
+   const index = result.innerHTML.length - 1
+   const screenContent = result.innerHTML
+   if(operators[screenContent[index]] && operators[element]) {
+      result.innerHTML = result.innerHTML.slice(0,-1) + element
    }
 }
