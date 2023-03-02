@@ -36,6 +36,7 @@ const number = (element) => {
 }
 
 const operators = (element) => {
+   if(element == '-' &&  result.innerHTML == '') result.innerHTML += element
    if (element.match(/[^.\dAC=]/g)) {
       if (signal) {
          signal = false
